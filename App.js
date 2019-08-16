@@ -7,7 +7,12 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Dice />
+        <View style={{ flex: 1 }}>
+          <Dice />
+        </View>
+        <View style={{ flex: 1 }}>
+          <Dice />
+        </View>
       </View>
     );
   }
@@ -18,6 +23,7 @@ const styles = {
     flex: 1,
     backgroundColor: "#E74292",
     alignItems: "center",
+    flexDirection: "row",
     justifyContent: "center"
   }
 };

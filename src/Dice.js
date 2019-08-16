@@ -57,7 +57,7 @@ export default class Dice extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Image source={this.state.side} />
+        <Image style={{ width: 100, height: 100 }} source={this.state.side} />
         <TouchableOpacity>
           <Button style={styles.buttonStyles} onPress={this.getSide}>
             <Text style={styles.buttonText}>Roll It!</Text>
